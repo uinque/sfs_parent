@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hk-commons-utils/hk-commons-utils.iml" filepath="$PROJECT_DIR$/hk-commons-utils/hk-commons-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hk-commons-web/hk-commons-web.iml" filepath="$PROJECT_DIR$/hk-commons-web/hk-commons-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hk-sfs-metadata/hk-sfs-metadata.iml" filepath="$PROJECT_DIR$/hk-sfs-metadata/hk-sfs-metadata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hk-sfs-web/hk-sfs-web.iml" filepath="$PROJECT_DIR$/hk-sfs-web/hk-sfs-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfs_parent.iml" filepath="$PROJECT_DIR$/sfs_parent.iml" />
+    </modules>
+  </component>
+</project>

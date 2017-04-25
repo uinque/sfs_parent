@@ -1,0 +1,9 @@
+com\hk\commons\web\searcher\WebSearchFilter$Operator.class
+com\hk\commons\web\HkCommonsWebApplication.class
+com\hk\commons\web\searcher\WebSearchFilter.class
+com\hk\commons\web\searcher\DynamicSpecifications$2.class
+com\hk\commons\web\utils\IpUtils.class
+com\hk\commons\web\utils\ServletUtils.class
+com\hk\commons\web\searcher\DynamicSpecifications.class
+com\hk\commons\web\utils\ResponseUtils.class
+com\hk\commons\web\searcher\DynamicSpecifications$1.class

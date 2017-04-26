@@ -29,11 +29,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="hk-commons-utils" target="1.6" />
-      <module name="hk-commons-web" target="1.6" />
+      <module name="hk-commons-utils" target="1.8" />
+      <module name="hk-commons-web" target="1.8" />
       <module name="hk-sfs-metadata" target="1.8" />
       <module name="hk-sfs-web" target="1.8" />
-      <module name="sfs_parent" target="1.6" />
+      <module name="sfs_parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

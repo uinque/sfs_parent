@@ -2,6 +2,7 @@ package com.hk.sfs.utils;
 
 import com.google.common.base.Throwables;
 import com.google.common.collect.Maps;
+import com.hk.commons.web.utils.ResponseUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -86,7 +87,7 @@ public final class JsonActionTemplate {
 		 */
 		@Override
 		public String toWriter(Object object) {
-			ResponseTypeOutputUtils.renderJson(response, object);
+			ResponseUtils.renderJson(response, object);
 			return super.toWriter(object);
 		}
 

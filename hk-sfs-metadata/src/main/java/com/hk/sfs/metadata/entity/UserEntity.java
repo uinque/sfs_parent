@@ -14,63 +14,59 @@ import javax.persistence.Table;
 @Entity
 @DynamicInsert
 @DynamicUpdate
-@Table(name="MEMBER")
-public class UserEntity extends BaseEntity{
+@Table(name = "MEMBER")
+public class UserEntity extends BaseEntity {
 
-    private String userName;
+	private String userName;
 
-    private Integer age;
+	private Integer age;
 
-    private String sex;
+	private String sex;
 
-    private String qq;
+	private String qq;
 
-    public UserEntity() {
-    }
+	public UserEntity() {
+	}
 
-    @Column(name="USER_NAME")
-    public String getUserName() {
-        return userName;
-    }
+	@Column(name = "USER_NAME")
+	public String getUserName() {
+		return userName;
+	}
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 
-    @Column(name="AGE")
-    public Integer getAge() {
-        return age;
-    }
+	@Column(name = "AGE")
+	public Integer getAge() {
+		return age;
+	}
 
-    public void setAge(Integer age) {
-        this.age = age;
-    }
+	public void setAge(Integer age) {
+		this.age = age;
+	}
 
-    @Column(name="SEX")
-    public String getSex() {
-        return sex;
-    }
+	@Column(name = "SEX")
+	public String getSex() {
+		return sex;
+	}
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
 
-    @Column(name="QQ")
-    public String getQq() {
-        return qq;
-    }
+	@Column(name = "QQ")
+	public String getQq() {
+		return qq;
+	}
 
-    public void setQq(String qq) {
-        this.qq = qq;
-    }
+	public void setQq(String qq) {
+		this.qq = qq;
+	}
 
-    @Override
-    public String toString() {
-        return "UserEntity{" +
-                "userName='" + userName + '\'' +
-                ", age=" + age +
-                ", sex='" + sex + '\'' +
-                ", qq='" + qq + '\'' +
-                '}';
-    }
+	@Override
+	public String toString() {
+		return "UserEntity{" + "userName='" + userName + '\'' + ", age=" + age + ", sex='" + sex + '\'' + ", qq='" + qq
+				+ '\'' + '}';
+	}
 }

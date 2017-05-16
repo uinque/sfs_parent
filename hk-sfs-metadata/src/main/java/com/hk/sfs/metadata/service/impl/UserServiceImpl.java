@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
  * @date 2017/4/16
  */
 @Service
-public class UserServiceImpl extends AbsBaseService<UserEntity,UserDao> implements UserService{
+public class UserServiceImpl extends AbsBaseService<UserEntity, UserDao> implements UserService {
 
-    @Override
-    public UserEntity getUserByName(String userName) {
+	@Override
+	public UserEntity getUserByName(String userName) {
 
-        return null;
-    }
+		return null;
+	}
 
 }

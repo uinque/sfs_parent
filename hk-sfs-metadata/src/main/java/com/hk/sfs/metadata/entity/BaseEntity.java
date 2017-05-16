@@ -16,69 +16,69 @@ import java.util.Date;
 @MappedSuperclass
 @DynamicInsert
 @DynamicUpdate
-public class BaseEntity implements Serializable{
+public class BaseEntity implements Serializable {
 
-    private static final long serialVersionUID = -8662772303432923796L;
+	private static final long serialVersionUID = -8662772303432923796L;
 
-    private Long id;
+	private Long id;
 
-    private Date createTime;
+	private Date createTime;
 
-    private Date modifyTime;
+	private Date modifyTime;
 
-    private String modifyBy;
+	private String modifyBy;
 
-    private Boolean isDeleted;
+	private Boolean isDeleted;
 
-    @Id
-    @GeneratedValue(generator = "localIdGenerator")
-    @GenericGenerator(name = "localIdGenerator", strategy = "com.hk.sfs.metadata.entity.LocalIdGenerator")
-    @Column(name = "ID")
-    //@JsonSerialize(using=IdSerializer.class)
-    public Long getId() {
-        return id;
-    }
+	@Id
+	@GeneratedValue(generator = "localIdGenerator")
+	@GenericGenerator(name = "localIdGenerator", strategy = "com.hk.sfs.metadata.entity.LocalIdGenerator")
+	@Column(name = "ID")
+	//@JsonSerialize(using=IdSerializer.class)
+	public Long getId() {
+		return id;
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "CREATE_TIME",updatable = false)
-    @CreatedDate
-    public Date getCreateTime() {
-        return createTime;
-    }
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "CREATE_TIME", updatable = false)
+	@CreatedDate
+	public Date getCreateTime() {
+		return createTime;
+	}
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "MODIFY_TIME")
-    public Date getModifyTime() {
-        return modifyTime;
-    }
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "MODIFY_TIME")
+	public Date getModifyTime() {
+		return modifyTime;
+	}
 
-    public void setModifyTime(Date modifyTime) {
-        this.modifyTime = modifyTime;
-    }
+	public void setModifyTime(Date modifyTime) {
+		this.modifyTime = modifyTime;
+	}
 
-    @Column(name = "MODIFY_BY")
-    public String getModifyBy() {
-        return modifyBy;
-    }
+	@Column(name = "MODIFY_BY")
+	public String getModifyBy() {
+		return modifyBy;
+	}
 
-    public void setModifyBy(String modifyBy) {
-        this.modifyBy = modifyBy;
-    }
+	public void setModifyBy(String modifyBy) {
+		this.modifyBy = modifyBy;
+	}
 
-    @Column(name = "IS_DELETED", columnDefinition = "tinyint default 0 comment '逻辑删除字段(0:正常,1:删除)'")
-    public Boolean getDeleted() {
-        return isDeleted;
-    }
+	@Column(name = "IS_DELETED", columnDefinition = "tinyint default 0 comment '逻辑删除字段(0:正常,1:删除)'")
+	public Boolean getDeleted() {
+		return isDeleted;
+	}
 
-    public void setDeleted(Boolean deleted) {
-        isDeleted = deleted;
-    }
+	public void setDeleted(Boolean deleted) {
+		isDeleted = deleted;
+	}
 }
